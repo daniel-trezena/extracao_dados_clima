@@ -12,7 +12,7 @@ URL = join("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/se
           f"{city}/{data_inicio}/{data_fim}?unitGroup=metric&include=days&key={key}&contentType=csv")
 
 
-
+#leitura dos dados
 dados = pd.read_csv(URL)
 print(dados.head())
 
